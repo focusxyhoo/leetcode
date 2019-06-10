@@ -5,7 +5,7 @@ package hard;
  * author      : focusxyhoo
  * date        : 2019-06-10
  * time        : 16:05
- * description :
+ * description : 两个有序数组的中位数。
  */
 public class T4_MedianOfTwoSortedArrays {
     public static void main(String[] args) {
