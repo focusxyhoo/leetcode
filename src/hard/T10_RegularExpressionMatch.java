@@ -6,6 +6,7 @@ package hard;
  * date        : 2019-06-10
  * time        : 16:25
  * description : 简单正则表达式的匹配。
+ *
  */
 
 enum Result {
@@ -16,7 +17,7 @@ public class T10_RegularExpressionMatch {
     public static void main(String[] args) {
         String s = "aabc";
         String p = ".*";
-        System.out.println(isMatchDP(s, p));
+        System.out.println(isMatchDP2(s, p));
     }
 
     /**
@@ -110,5 +111,24 @@ public class T10_RegularExpressionMatch {
         }
         memo[i][j] = ans ? Result.TRUE : Result.FALSE;
         return ans;
+    }
+
+    public static boolean isMatchDP2(String text, String pattern) {
+        boolean[][] dp = new boolean[text.length() + 1][pattern.length() + 1];
+        dp[text.length()][pattern.length()] = true;
+
+        for (int i = text.length(); i >= 0; i--) {
+            for (int j = pattern.length() - 1; j >= 0; j--) {
+                boolean firstMatch = (i < text.length() &&
+                        (pattern.charAt(j) == text.charAt(i) ||
+                                pattern.charAt(j) == '.'));
+                if (j + 1 < pattern.length() && pattern.charAt(j + 1) == '*') {
+                    dp[i][j] = dp[i][j + 2] || firstMatch && dp[i + 1][j];
+                } else {
+                    dp[i][j] = firstMatch && dp[i + 1][j + 1];
+                }
+            }
+        }
+        return dp[0][0];
     }
 }
