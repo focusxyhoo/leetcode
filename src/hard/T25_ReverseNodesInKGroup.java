@@ -12,15 +12,29 @@ import structure.ListNode;
 public class T25_ReverseNodesInKGroup {
 
     public static void main(String[] args) {
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+
+//        ListNode result = reverseKGroup(head, 2);
+//        T23_MergeKLists.printList(result);
+        ListNode result1 = reverseKGroup(head, 3);
+        T23_MergeKLists.printList(result1);
+        T23_MergeKLists.printList(head);
 
     }
 
     /**
+     * 递归思想
+     * 对原始链表有修改
+     *
      * @param head 被修改的链表
      * @param k
      * @return 返回修改后的链表的第一个节点
      */
-    public ListNode reverseKGroup(ListNode head, int k) {
+    public static ListNode reverseKGroup(ListNode head, int k) {
 
         ListNode cur = head;
         int count = 0;
@@ -32,14 +46,14 @@ public class T25_ReverseNodesInKGroup {
         // count != k 时，即链表 head 的长度小于 k
         // 而 count == k 时，以第 k+1 个节点为 head，继续递归找
         if (count == k) {
-            cur = reverseKGroup(cur, k);
+            cur = reverseKGroup(cur, k); // 此时 cur 记录的是链表尾端的第一个节点
             while (count-- > 0) {
                 ListNode temp = head.next;
                 head.next = cur;
                 cur = head;
                 head = temp;
             }
-            head = cur;
+            head = cur; // 循环（翻转）结束后，cur 指向的是该段链表的第一个节点
         }
         return head;
     }
