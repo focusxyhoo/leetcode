@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a078b04-ae9c-4bae-a54a-30bf3e1236ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/leetcode/medium/T92_ReverseLinkedListII.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/easy/T141_LinkedListCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/medium/T92_ReverseLinkedListII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode/META-INF/leetcode.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode/medium/T138_CopyListWithRandomPointer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode/medium/T142_LinkedListCycleII.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/leetcode/structure/RandomNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/easy/T160_IntersectionOfTwoLinkedLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/medium/T138_CopyListWithRandomPointer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/medium/T86_PartitionList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/structure/RandomNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/hard/T25_ReverseNodesInKGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/hard/T25_ReverseNodesInKGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/easy/T141_LinkedListCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/easy/T141_LinkedListCycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/medium/T142_LinkedListCycleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/medium/T142_LinkedListCycleII.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,10 +27,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/medium/T142_LinkedListCycleII.java">
+        <entry file="file://$PROJECT_DIR$/src/easy/T160_IntersectionOfTwoLinkedLists.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="269">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -52,6 +58,11 @@
         <option value="$PROJECT_DIR$/src/medium/T92_ReverseLinkedListII.java" />
         <option value="$PROJECT_DIR$/src/easy/T141_LinkedListCycle.java" />
         <option value="$PROJECT_DIR$/src/medium/T42_LinkedListCycleII.java" />
+        <option value="$PROJECT_DIR$/src/medium/T142_LinkedListCycleII.java" />
+        <option value="$PROJECT_DIR$/src/structure/RandomNode.java" />
+        <option value="$PROJECT_DIR$/src/medium/T138_CopyListWithRandomPointer.java" />
+        <option value="$PROJECT_DIR$/src/medium/T86_PartitionList.java" />
+        <option value="$PROJECT_DIR$/src/easy/T160_IntersectionOfTwoLinkedLists.java" />
       </list>
     </option>
   </component>
@@ -96,13 +107,6 @@
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hard" type="462c0819:PsiDirectoryNode" />
-              <item name="T10_RegularExpressionMatch.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="medium" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -138,13 +142,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.T141_LinkedListCycle">
-    <configuration name="T10_RegularExpressionMatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hard.T10_RegularExpressionMatch" />
+  <component name="RunManager" selected="Application.T138_CopyListWithRandomPointer">
+    <configuration name="T138_CopyListWithRandomPointer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="medium.T138_CopyListWithRandomPointer" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hard.*" />
+          <option name="PATTERN" value="medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,12 +169,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T23_MergeKLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hard.T23_MergeKLists" />
+    <configuration name="T142_LinkedListCycleII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="medium.T142_LinkedListCycleII" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hard.*" />
+          <option name="PATTERN" value="medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T138_CopyListWithRandomPointer" />
+        <item itemvalue="Application.T142_LinkedListCycleII" />
         <item itemvalue="Application.T141_LinkedListCycle" />
         <item itemvalue="Application.T92_ReverseLinkedListII" />
         <item itemvalue="Application.T25_ReverseNodesInKGroup" />
-        <item itemvalue="Application.T23_MergeKLists" />
-        <item itemvalue="Application.T10_RegularExpressionMatch" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +230,7 @@
       <updated>1559738025239</updated>
       <workItem from="1559738026431" duration="111000" />
       <workItem from="1560153862190" duration="10231000" />
-      <workItem from="1560218200531" duration="6635000" />
+      <workItem from="1560218200531" duration="13092000" />
     </task>
     <task id="LOCAL-00001" summary="modify T25">
       <created>1560219908756</created>
@@ -239,7 +243,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16977000" />
+    <option name="totallyTimeSpent" value="23434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -254,7 +258,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32902467" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32902467" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -346,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/easy/T141_LinkedListCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="27" column="76" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/medium/T42_LinkedListCycleII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -360,10 +357,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/easy/T141_LinkedListCycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/medium/T142_LinkedListCycleII.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="300">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/structure/RandomNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/medium/T138_CopyListWithRandomPointer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/medium/T86_PartitionList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/easy/T160_IntersectionOfTwoLinkedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
