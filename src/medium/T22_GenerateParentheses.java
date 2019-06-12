@@ -17,7 +17,6 @@ public class T22_GenerateParentheses {
         Stack<Character> myStack = new Stack<>();
 
 
-
         return null;
     }
 
