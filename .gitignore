@@ -5,7 +5,7 @@ out/
 
 # ide
 .vscode
-.iml
+*.iml
 .idea/
 
 # macos
