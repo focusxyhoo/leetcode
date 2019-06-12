@@ -1,1 +1,14 @@
+
+# build
+*.class
+out/
+
+# ide
+.vscode
+.iml
+.idea/
+
+# macos
 .DS_Store
+
+
