@@ -51,14 +51,6 @@ public class T31_NextPermutation {
         Arrays.sort(nums, index, len);
     }
 
-    public static void main(String[] args) {
-        int[] nums = {3,1,2,2};
-//        int[] nums = {1};
-        nextPermutation2(nums);
-        for (int i = 0; i < nums.length; i++){
-            System.out.println(nums[i]);
-        }
-    }
     // 思路与上面相同，只是写法相对更好一些。
     public static void nextPermutation2(int[] nums) {
         int i = nums.length - 2;
@@ -88,5 +80,14 @@ public class T31_NextPermutation {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {3,1,2,2};
+//        int[] nums = {1};
+        nextPermutation2(nums);
+        for (int i = 0; i < nums.length; i++){
+            System.out.println(nums[i]);
+        }
     }
 }
