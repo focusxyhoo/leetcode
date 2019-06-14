@@ -26,7 +26,7 @@ public class T17_LetterCombinations {
 
     private static List<String> result = new ArrayList<>();
 
-    public static void backTrack(String combination, String nextDigits) {
+    public static void backtrack(String combination, String nextDigits) {
         if (nextDigits.length() == 0) {
             result.add(combination);
         } else {
@@ -34,20 +34,20 @@ public class T17_LetterCombinations {
             String letters = myMap.get(digit);
             for (int i = 0; i < letters.length(); i++) {
                 String letter = letters.substring(i, i + 1);
-                backTrack(combination + letter, nextDigits.substring(1));
+                backtrack(combination + letter, nextDigits.substring(1));
             }
         }
     }
 
     public static List<String> letterCombinations(String digits) {
         if (digits.length() != 0) {
-            backTrack("", digits);
+            backtrack("", digits);
         }
         return result;
     }
 
     public static void main(String[] args) {
-        String digits = "4567";
+        String digits = "23";
         System.out.println(letterCombinations(digits));
 
     }
