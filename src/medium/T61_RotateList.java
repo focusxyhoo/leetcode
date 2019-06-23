@@ -10,7 +10,7 @@ import structure.ListNode;
  * time        : 15:29
  * description :
  */
-public class T61RotateList {
+public class T61_RotateList {
 
     /**
      * created by focusyxhoo:
