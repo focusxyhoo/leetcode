@@ -1,9 +1,19 @@
 package easy;
 
 import structure.TreeNode;
+
 import java.util.Stack;
 
 public class T100_SameTree {
+
+    /**
+     * 递归写法。
+     * 在与树相关的算法实现中，递归的写法总是最简单的。
+     *
+     * @param p
+     * @param q
+     * @return
+     */
     public static boolean isSameTreeRecursively(TreeNode p, TreeNode q) {
         if (p == null && q == null) return true;
         if (p == null && q != null || p != null && q == null) return false;
@@ -12,6 +22,13 @@ public class T100_SameTree {
         return isSameTreeRecursively(p.left, q.left) && isSameTreeRecursively(p.right, q.right);
     }
 
+    /**
+     * 使用栈来解决。
+     *
+     * @param p
+     * @param q
+     * @return
+     */
     public static boolean isSameTreeIteratively(TreeNode p, TreeNode q) {
         if (p == null && q == null)
             return true;
