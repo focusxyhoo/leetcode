@@ -16,7 +16,6 @@ public class Test {
 
         Map<Character, Integer> map = new HashMap<>();
         map.put('a', 1);
-        map.
         if (map.containsKey('a')) System.out.println(map.get('a'));
     }
 }
