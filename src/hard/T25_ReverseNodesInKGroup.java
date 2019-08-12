@@ -20,9 +20,8 @@ public class T25_ReverseNodesInKGroup {
 
 //        ListNode result = reverseKGroup(head, 2);
 //        T23_MergeKLists.printList(result);
-        ListNode result1 = reverseKGroup(head, 3);
+        ListNode result1 = reverseKGroup(head, 5);
         T23_MergeKLists.printList(result1);
-        T23_MergeKLists.printList(head);
 
     }
 

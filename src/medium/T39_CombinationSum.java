@@ -13,22 +13,12 @@ import java.util.List;
  * @date 2019-05-06 14:21
  */
 public class T39_CombinationSum {
-
-    /**
-     * @param nums
-     * @param target
-     * @return
-     */
-
-
     public static List<List<Integer>> combinationSum(int[] nums, int target) {
-
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(nums);
         backtrack(list, new ArrayList<>(), nums, target, 0);
         return list;
     }
-
 
     public static void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums, int remain, int start) {
         if (remain < 0) {
@@ -44,9 +34,8 @@ public class T39_CombinationSum {
         }
     }
 
-
     public static void main(String[] args) {
-        List<List<Integer>> list = combinationSum(new int[] {2,3,6,7}, 7);
+        List<List<Integer>> list = combinationSum(new int[]{2, 3, 5}, 8);
         System.out.println(list.toString());
     }
 }
