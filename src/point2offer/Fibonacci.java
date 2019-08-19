@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 public class Fibonacci {
     // 斐波那契数列：写法都很简单，第三种方法不实用，这里没写

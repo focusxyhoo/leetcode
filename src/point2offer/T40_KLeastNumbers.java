@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 import algorithms.QuickSort;
 
@@ -31,12 +31,12 @@ public class T40_KLeastNumbers {
         }
         int start = 0;
         int end = nums.length - 1;
-        int index = QuickSort.quickSortPartition(nums, start, end);
+        int index = QuickSort.partition(nums, start, end);
         while (index != k - 1) {
             if (index > k - 1) {
-                index = QuickSort.quickSortPartition(nums, start, index - 1);
+                index = QuickSort.partition(nums, start, index - 1);
             } else {
-                index = QuickSort.quickSortPartition(nums, index + 1, end);
+                index = QuickSort.partition(nums, index + 1, end);
             }
         }
         for (int i = 0; i < k; i++) {

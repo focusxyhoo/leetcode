@@ -1,6 +1,6 @@
 package leetcode.medium;
 
-import easy.T160_IntersectionOfTwoLinkedLists;
+import leetcode.easy.T160_IntersectionOfTwoLinkedLists;
 import structure.ListNode;
 
 /**

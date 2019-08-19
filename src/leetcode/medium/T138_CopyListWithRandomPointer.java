@@ -1,6 +1,6 @@
 package leetcode.medium;
 
-import hard.T23_MergeKLists;
+import leetcode.hard.T23_MergeKLists;
 import structure.ListNode;
 import structure.RandomNode;
 

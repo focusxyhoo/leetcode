@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 import java.util.Arrays;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 public class DuplicationInArrayNoEdit {
     public static int duplicationInArrayNoEdit(int[] nums) {

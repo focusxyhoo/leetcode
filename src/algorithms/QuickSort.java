@@ -29,7 +29,7 @@ public class QuickSort {
     }
 
     // 一次划分
-    private static int partition(int[] nums, int left, int right) {
+    public static int partition(int[] nums, int left, int right) {
         int pivotPos = left;
         int pivotValue = nums[left];
         while (left < right) {

@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 // 动态规划和贪婪算法
 // DP的三个特点：

@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 // 位运算
 public class P15_NumberOf1InBinary {

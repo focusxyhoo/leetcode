@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 
 import algorithms.QuickSort;
@@ -42,12 +42,12 @@ public class P39_MoreThanHalfNumber {
         // 注意负数的二进制表示
         int k = nums.length >>> 1;
         // 注意 index 的含义：nums[left] 在数组中的正确位置
-        int index = QuickSort.quickSortPartition(nums, left, right);
+        int index = QuickSort.partition(nums, left, right);
         while (index != k) {
             if (index > k) {
-                index = QuickSort.quickSortPartition(nums, left, index - 1);
+                index = QuickSort.partition(nums, left, index - 1);
             } else {
-                index = QuickSort.quickSortPartition(nums, index + 1, right);
+                index = QuickSort.partition(nums, index + 1, right);
             }
         }
         if (isIllegal(nums, nums[k])) {

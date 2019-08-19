@@ -1,11 +1,11 @@
-package questions;
+package point2offer;
 
 import java.util.Stack;
 import structure.ListNode;
 
 public class PrintListInReversedOrder {
     // 使用栈来实现逆序打印链表的功能
-    public static void printListInReversedOrder(ListNode<Integer> p) {
+    public static void printListInReversedOrder(ListNode p) {
         Stack<Integer> stack = new Stack<>();
         while (p != null) {
             stack.push(p.val);
@@ -18,7 +18,7 @@ public class PrintListInReversedOrder {
     }
 
     // 也可以使用递归的方法
-    public static void printListInReversedOrder1(ListNode<Integer> p) {
+    public static void printListInReversedOrder1(ListNode p) {
         if (p == null)
             return;
         else {

@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 public class MinNumberInRotatedArray {
     // 查找和排序问题

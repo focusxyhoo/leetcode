@@ -1,6 +1,6 @@
 package leetcode.medium;
 
-import easy.T141_LinkedListCycle;
+import leetcode.easy.T141_LinkedListCycle;
 import structure.ListNode;
 
 /**

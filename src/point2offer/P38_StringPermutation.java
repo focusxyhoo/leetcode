@@ -1,4 +1,4 @@
-package questions;
+package point2offer;
 
 import java.util.HashSet;
 import java.util.LinkedList;

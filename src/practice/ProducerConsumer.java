@@ -1,3 +1,5 @@
+package practice;
+
 // 一个使用wait和notify实现生产者消费者模型的例子
 public class ProducerConsumer {
     private static Integer count = 0;

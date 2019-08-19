@@ -1,6 +1,6 @@
 package algorithms;
 
-import structure.Node;
+import structure.ListNode;
 
 /**
  * created with IntelliJ IDEA
@@ -28,10 +28,10 @@ public class AlgorithmsOnLinkedList {
      * @param head
      * @return
      */
-    public static Node reverse(Node head) {
-        Node cur = head, pre = null;
+    public static ListNode reverse(ListNode head) {
+        ListNode cur = head, pre = null;
         while (cur != null) {
-            Node next = cur.next;
+            ListNode next = cur.next;
             cur.next = pre;
             pre = cur;
             cur = next;
@@ -47,12 +47,12 @@ public class AlgorithmsOnLinkedList {
      * @param head
      * @return
      */
-    public static boolean hasCircle(Node head) {
+    public static boolean hasCircle(ListNode head) {
         if (head == null) {
             return false;
         }
-        Node fast = head.next;
-        Node slow = head;
+        ListNode fast = head.next;
+        ListNode slow = head;
 
         while (fast != null && slow != null) {
             fast = fast.next.next;
@@ -73,24 +73,24 @@ public class AlgorithmsOnLinkedList {
      * @param lb
      * @return
      */
-    public static Node mergeSortedLists(Node la, Node lb) {
+    public static ListNode mergeSortedLists(ListNode la, ListNode lb) {
         // 优先处理链表为空的情况。
         if (la == null) return lb;
         if (lb == null) return la;
 
-        Node p = la, q = lb;
-        Node head;
-        if (p.value < q.value) {
+        ListNode p = la, q = lb;
+        ListNode head;
+        if (p.val < q.val) {
             head = p;
             p = p.next;
         } else {
             head = q;
             q = q.next;
         }
-        Node r = head;
+        ListNode r = head;
 
         while (p != null && q != null) {
-            if (p.value < q.value) {
+            if (p.val < q.val) {
                 r.next = p;
                 p = p.next;
             } else {
@@ -115,9 +115,9 @@ public class AlgorithmsOnLinkedList {
      * @param k
      * @return
      */
-    public static Node getLastKthNode(Node head, int k) {
+    public static ListNode getLastKthListNode(ListNode head, int k) {
         int length = getLength(head);
-        Node cur = head;
+        ListNode cur = head;
         if (k > length) return null;
         for (int i = 1; i < length - k + 1; i++) {
             cur = cur.next;
@@ -136,10 +136,10 @@ public class AlgorithmsOnLinkedList {
      * @param k
      * @return
      */
-    public static Node getLastKthNodeRecursively(Node head, int k) {
+    public static ListNode getLastKthListNodeRecursively(ListNode head, int k) {
         count = k;
         if (head == null) return null;
-        Node cur = getLastKthNodeRecursively(head.next, k);
+        ListNode cur = getLastKthListNodeRecursively(head.next, k);
         if (cur != null) {
             return cur;
         } else {
@@ -157,9 +157,9 @@ public class AlgorithmsOnLinkedList {
      * @param k
      * @return
      */
-    public static Node getLastKthNodeOne(Node head, int k) {
+    public static ListNode getLastKthListNodeOne(ListNode head, int k) {
         if (head == null || k == 0) return null;
-        Node p = head, q = head;
+        ListNode p = head, q = head;
         for (int i = 0; i < k; i++) {
             if (p != null) {
                 p = p.next;
@@ -180,15 +180,15 @@ public class AlgorithmsOnLinkedList {
      * @param k
      * @return
      */
-    public static Node deleteLastKthNode(Node head, int k) {
+    public static ListNode deleteLastKthListNode(ListNode head, int k) {
         if (head == null || k == 0) return null;
-        Node p = head, q = head;
+        ListNode p = head, q = head;
         for (int i = 0; i < k; i++) {
             if (p != null) {
                 p = p.next;
             } else return null;
         }
-        Node prev = null;
+        ListNode prev = null;
         while (p != null) {
             p = p.next;
             prev = q; // 保存倒数第 k 个节点的前一个节点
@@ -209,9 +209,9 @@ public class AlgorithmsOnLinkedList {
      * @param head
      * @return
      */
-    public static Node getMiddleNode(Node head) {
+    public static ListNode getMiddleListNode(ListNode head) {
         if (head == null) return null;
-        Node fast = head, slow = head;
+        ListNode fast = head, slow = head;
         while (fast.next != null && fast.next.next != null) {
             fast=fast.next.next;
             slow=slow.next;
@@ -225,8 +225,8 @@ public class AlgorithmsOnLinkedList {
      * @param head
      * @return
      */
-    public static int getLength(Node head) {
-        Node cur = head;
+    public static int getLength(ListNode head) {
+        ListNode cur = head;
         int length = 0;
         while (cur != null) {
             ++length;
@@ -241,10 +241,10 @@ public class AlgorithmsOnLinkedList {
      * @param head
      * @return
      */
-    public static void printList(Node head) {
-        Node cur = head;
+    public static void printList(ListNode head) {
+        ListNode cur = head;
         while (cur != null) {
-            System.out.print(cur.value + " -> ");
+            System.out.print(cur.val + " -> ");
             cur = cur.next;
         }
         System.out.println("null");
@@ -252,11 +252,11 @@ public class AlgorithmsOnLinkedList {
 
     public static void main(String[] args) {
         // 新建两个链表 1 -> 5 -> 7 -> null 和 2 -> 4 -> null
-        Node la = new Node(1);
-        la.next = new Node(5);
-        la.next.next = new Node(7);
-        Node lb = new Node(2);
-        lb.next = new Node(4);
+        ListNode la = new ListNode(1);
+        la.next = new ListNode(5);
+        la.next.next = new ListNode(7);
+        ListNode lb = new ListNode(2);
+        lb.next = new ListNode(4);
 
         // 打印链表 la 和 lb
         System.out.print("链表 la：");
@@ -267,28 +267,28 @@ public class AlgorithmsOnLinkedList {
 
         System.out.println("链表 la 的长度：" + getLength(la));
 
-//        Node pre = reverse(la);
+//        ListNode pre = reverse(la);
 //        System.out.print("反转链表 la：");
 //        printList(pre);
 
         // 新建一个有环的链表：3 -> 6 -> 9 -> 3 ...
-        Node lc = new Node(3);
-        lc.next = new Node(6);
-        lc.next.next = new Node(9);
+        ListNode lc = new ListNode(3);
+        lc.next = new ListNode(6);
+        lc.next.next = new ListNode(9);
         lc.next.next.next = lc;
 
         System.out.println("链表 la 是否有环：" + hasCircle(la));
         System.out.println("链表 lc 是否有环：" + hasCircle(lc));
 
-//        Node head = mergeSortedLists(la, lb);
+//        ListNode head = mergeSortedLists(la, lb);
 //        System.out.print("合并有序链表 la 和 lb：");
 //        printList(head);
 
-//        Node k = getLastKthNode(la, 2);
-//        System.out.println("链表 la 倒数第 2 个节点是：" + k.value);
-        Node v = deleteLastKthNode(la, 3);
+//        ListNode k = getLastKthListNode(la, 2);
+//        System.out.println("链表 la 倒数第 2 个节点是：" + k.val);
+        ListNode v = deleteLastKthListNode(la, 3);
         printList(v);
-//        System.out.println("：链表 la 倒数第 2 个节点是：" + v.value);
+//        System.out.println("：链表 la 倒数第 2 个节点是：" + v.val);
 
 
     }

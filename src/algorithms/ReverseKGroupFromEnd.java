@@ -1,7 +1,7 @@
 package algorithms;
 
-import easy.T206_ReverseLinkedList;
-import hard.T25_ReverseNodesInKGroup;
+import leetcode.easy.T206_ReverseLinkedList;
+import leetcode.hard.T25_ReverseNodesInKGroup;
 import structure.ListNode;
 
 import java.util.LinkedList;
