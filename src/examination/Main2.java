@@ -1,4 +1,4 @@
-package algorithms;
+package examination;
 
 import java.util.Arrays;
 import java.util.Scanner;

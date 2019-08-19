@@ -1,4 +1,4 @@
-package others;
+package algorithms;
 
 import java.util.Arrays;
 
@@ -15,11 +15,11 @@ public class LatticeMultiplication {
     public static void main(String[] args) {
         int[] nums1 = {9, 3, 4};
         int[] nums2 = {3, 1, 4};
-        System.out.println(Arrays.toString(fibonacciMultipy(nums1, nums2)));
+        System.out.println(Arrays.toString(fibonacciMultiply(nums1, nums2)));
 
     }
 
-    public static int[] fibonacciMultipy(int[] nums1, int[] nums2) {
+    public static int[] fibonacciMultiply(int[] nums1, int[] nums2) {
 
         int hold = 0;
         int m = nums1.length, n = nums2.length;

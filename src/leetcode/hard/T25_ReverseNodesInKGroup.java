@@ -1,4 +1,4 @@
-package hard;
+package leetcode.hard;
 
 import structure.ListNode;
 

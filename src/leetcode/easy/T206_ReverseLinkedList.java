@@ -1,4 +1,4 @@
-package easy;
+package leetcode.easy;
 
 import algorithms.ReverseKGroupFromEnd;
 import structure.ListNode;

@@ -1,4 +1,4 @@
-package medium;
+package leetcode.medium;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -66,5 +66,5 @@ public class T15_3Sum {
         System.out.println(result2);
 
 
-    } 
+    }
 }

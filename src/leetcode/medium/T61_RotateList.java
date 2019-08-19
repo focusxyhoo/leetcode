@@ -1,4 +1,4 @@
-package medium;
+package leetcode.medium;
 
 import easy.T160_IntersectionOfTwoLinkedLists;
 import structure.ListNode;

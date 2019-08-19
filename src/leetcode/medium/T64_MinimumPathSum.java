@@ -1,4 +1,4 @@
-package medium;
+package leetcode.medium;
 
 /**
  * created with IntelliJ IDEA

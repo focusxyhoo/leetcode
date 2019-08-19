@@ -1,4 +1,4 @@
-package easy;
+package leetcode.easy;
 
 /**
  * created with IntelliJ IDEA

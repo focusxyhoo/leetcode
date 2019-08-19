@@ -1,4 +1,4 @@
-package medium;
+package leetcode.medium;
 
 import easy.T141_LinkedListCycle;
 import structure.ListNode;

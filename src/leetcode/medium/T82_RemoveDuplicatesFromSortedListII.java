@@ -1,4 +1,4 @@
-package medium;
+package leetcode.medium;
 
 import structure.ListNode;
 

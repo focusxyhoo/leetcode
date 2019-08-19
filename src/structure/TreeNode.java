@@ -1,11 +1,11 @@
 package structure;
 
-public class TreeNode {
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
+public class TreeNode<T> {
+    public T val;
+    public TreeNode<T> left;
+    public TreeNode<T> right;
 
-    public TreeNode(int val) {
+    public TreeNode(T val) {
         this.val = val;
     }
 }
