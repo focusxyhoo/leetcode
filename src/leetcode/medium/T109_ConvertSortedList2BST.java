@@ -15,7 +15,7 @@ public class T109_ConvertSortedList2BST {
     public static TreeNode sortedList2BST(ListNode head) {
 
         ListNode cur = head.next;
-        TreeNode<Integer> root = new TreeNode<>(head.val);
+        TreeNode root = new TreeNode(head.val);
         while (cur != null) {
             if (root.val > cur.val)
                 ;

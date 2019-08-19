@@ -4,11 +4,11 @@ import structure.TreeNode;
 
 public class T99_RecoverBinarySearchTree {
 
-    public static void recoverTree(TreeNode<Integer> root) {
+    public static void recoverTree(TreeNode root) {
         if (root == null) return;
     }
 
-    private static void swapTreeNode(TreeNode<Integer> p, TreeNode<Integer> q) {
+    private static void swapTreeNode(TreeNode p, TreeNode q) {
         int temp = p.val;
         p.val = q.val;
         q.val = temp;

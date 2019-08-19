@@ -16,17 +16,17 @@ import java.util.List;
 public class T1038_BinarySearchTree2GreaterSumTree {
     public static void main(String[] args) {
 
-        TreeNode<Integer> root = new TreeNode<>(4);
-        root.left = new TreeNode<>(1);
-        root.right = new TreeNode<>(6);
-        root.left.left = new TreeNode<>(0);
-        root.left.right = new TreeNode<>(2);
-        root.left.right.right = new TreeNode<>(3);
-        root.right.left = new TreeNode<>(5);
-        root.right.right = new TreeNode<>(7);
-        root.right.right.right = new TreeNode<>(8);
+        TreeNode root = new TreeNode(4);
+        root.left = new TreeNode(1);
+        root.right = new TreeNode(6);
+        root.left.left = new TreeNode(0);
+        root.left.right = new TreeNode(2);
+        root.left.right.right = new TreeNode(3);
+        root.right.left = new TreeNode(5);
+        root.right.right = new TreeNode(7);
+        root.right.right.right = new TreeNode(8);
 
-        TreeNode<Integer> newRoot = bst2Gst(root);
+        TreeNode newRoot = bst2Gst(root);
         preTraversal(newRoot);
         System.out.println(preOrder.toString());
     }
@@ -39,7 +39,7 @@ public class T1038_BinarySearchTree2GreaterSumTree {
      * @param root
      * @return
      */
-    public static TreeNode<Integer> bst2Gst(TreeNode<Integer> root) {
+    public static TreeNode bst2Gst(TreeNode root) {
         preTraversal(root);
         second(root);
         return root;
@@ -53,7 +53,7 @@ public class T1038_BinarySearchTree2GreaterSumTree {
      *
      * @param root
      */
-    public static void preTraversal(TreeNode<Integer> root) {
+    public static void preTraversal(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -69,7 +69,7 @@ public class T1038_BinarySearchTree2GreaterSumTree {
      * @param root
      * @return
      */
-    public static void second(TreeNode<Integer> root) {
+    public static void second(TreeNode root) {
         if (root == null) {
             return;
         }
@@ -84,7 +84,7 @@ public class T1038_BinarySearchTree2GreaterSumTree {
      * @param root
      * @return
      */
-    public static int getSum(TreeNode<Integer> root) {
+    public static int getSum(TreeNode root) {
         Iterator it = preOrder.iterator();
         int sum = 0;
         while (it.hasNext()) {

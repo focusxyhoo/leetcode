@@ -8,7 +8,7 @@ import java.util.*;
 public class TraversalOfBinaryTree {
 
     // 前序递归遍历
-    public static List<Integer> preorderRecursively(TreeNode<Integer> node) {
+    public static List<Integer> preorderRecursively(TreeNode node) {
         List<Integer> list = new ArrayList<>();
         if (node == null)
             return list;
@@ -19,7 +19,7 @@ public class TraversalOfBinaryTree {
     }
 
     // 中序递归遍历
-    public static List<Integer> inorderRecursively(TreeNode<Integer> node) {
+    public static List<Integer> inorderRecursively(TreeNode node) {
         List<Integer> list = new ArrayList<>();
         if (node == null)
             return list;
@@ -30,7 +30,7 @@ public class TraversalOfBinaryTree {
     }
 
     // 后序递归遍历
-    public static List<Integer> postorderRecursively(TreeNode<Integer> node) {
+    public static List<Integer> postorderRecursively(TreeNode node) {
         List<Integer> list = new ArrayList<>();
         if (node == null)
             return list;
@@ -41,9 +41,9 @@ public class TraversalOfBinaryTree {
     }
 
     // 前序非递归遍历
-    public static List<Integer> preorderIteractively(TreeNode<Integer> node) {
-        Stack<TreeNode<Integer>> stack = new Stack<>();
-        TreeNode<Integer> cur = node;
+    public static List<Integer> preorderIteractively(TreeNode node) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = node;
         List<Integer> list = new LinkedList<>();
         if (node == null)
             return list;
@@ -60,9 +60,9 @@ public class TraversalOfBinaryTree {
     }
 
     // 中序非递归遍历
-    public static List<Integer> inorderIteractively(TreeNode<Integer> node) {
-        Stack<TreeNode<Integer>> stack = new Stack<>();
-        TreeNode<Integer> cur = node;
+    public static List<Integer> inorderIteractively(TreeNode node) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = node;
         List<Integer> list = new LinkedList<>();
         if (node == null)
             return list;
@@ -79,11 +79,11 @@ public class TraversalOfBinaryTree {
     }
 
     // 后序非递归遍历
-    public static List<Integer> postorderIteractively(TreeNode<Integer> node) {
-        Stack<TreeNode<Integer>> stack = new Stack<>();
-        TreeNode<Integer> cur = node;
+    public static List<Integer> postorderIteractively(TreeNode node) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = node;
         List<Integer> list = new LinkedList<>();
-        TreeNode<Integer> preVisted = null;
+        TreeNode preVisted = null;
         while (cur != null || !stack.isEmpty()) {
             if (cur != null) {
                 stack.push(cur);
@@ -104,10 +104,10 @@ public class TraversalOfBinaryTree {
     }
 
     // 层序遍历 BFS
-    public static List<Integer> levelorder(TreeNode<Integer> node) {
-        Queue<TreeNode<Integer>> queue = new LinkedList<>();
+    public static List<Integer> levelorder(TreeNode node) {
+        Queue<TreeNode> queue = new LinkedList<>();
         List<Integer> list = new LinkedList<>();
-        TreeNode<Integer> temp = null;
+        TreeNode temp = null;
         if (node == null)
             return list;
         queue.offer(node);
@@ -130,14 +130,14 @@ public class TraversalOfBinaryTree {
         //            4   5   6
         //             \     /
         //              7   8
-        TreeNode<Integer> root = new TreeNode<>(1);
-        root.left = new TreeNode<>(2);
-        root.left.left = new TreeNode<>(4);
-        root.left.left.right = new TreeNode<>(7);
-        root.right = new TreeNode<>(3);
-        root.right.left = new TreeNode<>(5);
-        root.right.right = new TreeNode<>(6);
-        root.right.right.left = new TreeNode<>(8);
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.left.left = new TreeNode(4);
+        root.left.left.right = new TreeNode(7);
+        root.right = new TreeNode(3);
+        root.right.left = new TreeNode(5);
+        root.right.right = new TreeNode(6);
+        root.right.right.left = new TreeNode(8);
 
         List<Integer> list_preorderRecursively = preorderRecursively(root);
         System.out.print("Preorder recursively: ");
