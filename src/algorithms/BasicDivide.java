@@ -15,7 +15,6 @@ public class BasicDivide {
             Scanner scanner = new Scanner(System.in);
             int m = scanner.nextInt();
             int n = scanner.nextInt();
-
             StringBuilder sb = new StringBuilder();
 
             int count = 8;

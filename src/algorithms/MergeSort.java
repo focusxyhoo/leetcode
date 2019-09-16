@@ -30,14 +30,15 @@ public class MergeSort {
      */
     private static void core(int[] nums, int left, int right) {
         if (left >= right) return;
-        int mid = (left + right)/2;
+        int mid = (left + right) / 2;
         core(nums, left, mid);
         core(nums, mid + 1, right);
-        merge(nums, left, mid, right);
+        merge2(nums, left, mid, right);
     }
 
     /**
-     * 合并两个有效数组
+     * 通过第三个临时数组来合并两个有效数组。
+     * 第三个数组存储归并后的结果，然后再写回 nums 数组。
      *
      * @param nums
      * @param left
@@ -58,6 +59,27 @@ public class MergeSort {
         // 写回原数组
         for (int p = 0; p < temp.length; p++) {
             nums[left + p] = temp[p];
+        }
+    }
+
+    private static int[] aux = new int[100]; // 保证长度大于 nums 即可
+
+    /**
+     * 先将 nums[left, right] 原样复制到 aux 数组中，然后再写回的时候归并。
+     *
+     * @param nums
+     * @param left
+     * @param mid
+     * @param right
+     */
+    private static void merge2(int[] nums, int left, int mid, int right) {
+        int i = left, j = mid + 1;
+        for (int k = left; k <= right; k++) aux[k] = nums[k];
+        for (int k = left; k <= right; k++) {
+            if (i > mid) nums[k] = aux[j++];
+            else if (j > right) nums[k] = aux[i++];
+            else if (aux[i] < aux[j]) nums[k] = aux[i++];
+            else nums[k] = aux[j++];
         }
     }
 }
