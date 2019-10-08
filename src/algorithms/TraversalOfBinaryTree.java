@@ -148,19 +148,19 @@ public class TraversalOfBinaryTree {
         System.out.println(list_inorderRecursively.toString());
 
         List<Integer> list_postorderRecursively = postorderRecursively(root);
-        System.out.print("Postorder recursively: ");
+        System.out.print("post order recursively: ");
         System.out.println(list_postorderRecursively.toString());
 
         List<Integer> list_preorderIteractively = preorderIteractively(root);
-        System.out.print("Preorder iteractively: ");
+        System.out.print("Preorder iteratively: ");
         System.out.println(list_preorderIteractively.toString());
 
         List<Integer> list_inorderIteractively = inorderIteractively(root);
-        System.out.print("Inorder iteractively: ");
+        System.out.print("Inorder iteratively: ");
         System.out.println(list_inorderIteractively.toString());
 
         List<Integer> list_postorderIteractively = postorderIteractively(root);
-        System.out.print("Postorder iteractively: ");
+        System.out.print("post order iteratively: ");
         System.out.println(list_postorderIteractively.toString());
 
         List<Integer> list_levelorder = levelorder(root);

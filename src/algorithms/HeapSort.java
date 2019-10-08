@@ -17,7 +17,7 @@ import java.util.Arrays;
  */
 public class HeapSort {
     public static void main(String[] args) {
-        int[] nums = {9, 5, 3, 6, 8, 1, 7, 4, 2};
+        int[] nums = {9, 1, 3, 6, 8, 5, 7, 4, 2};
         heapSort(nums);
         System.out.println(Arrays.toString(nums));
     }
@@ -38,10 +38,10 @@ public class HeapSort {
 
     private static void adjustHeap(int[] nums, int index, int length) {
         int temp = nums[index];
-        for (int i = 2 * index + 1; i < length; i = 2 * i + 1) { // 依次将 temp 与其孩子节点进行比较
+        for (int i = 2 * index + 1; i < length; i = 2 * i + 1) { // 依次将 temp 与其孩子节点进行比较，往下调整
             // 左右子节点分别为 2 * i + 1，2 * i + 2
-            if (i + 1 < length && nums[i] < nums[i + 1]) i++; // 取左右子节点中最大的那一个
-            if (nums[i] > temp) { // 比较，若 temp 小，交换值，只会沿交换过的子树那一边遍历下去
+            if (i + 1 < length && nums[i] > nums[i + 1]) i++; // 取左右子节点中最大的那一个
+            if (nums[i] < temp) { // 比较，若 temp 小，交换值，只会沿交换过的子树那一边遍历下去
                 nums[index] = nums[i];
                 index = i;
             } else break; // 若不小于，则说明当前节点比起子树的各个节点都要大，无需任何操作
